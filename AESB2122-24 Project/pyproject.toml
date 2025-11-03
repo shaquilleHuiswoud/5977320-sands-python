@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AESB2122-24_signal-tools"
+version = "0.1.0"
+description = "Signal generation and processing tools for AESB2122-24 course project"
+authors = [
+    {name = "Shaquille Huiswoud", email = "shuiswoud@tudelft.nl"}
+]
+dependencies = [
+    "numpy",
+    "matplotlib"
+]
