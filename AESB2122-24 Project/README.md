@@ -101,12 +101,12 @@ pip install numpy matplotlib
 ## Project Structure
 
 AESB2122-24 Project/
-│
-├── README.md            # Project description and usage instructions
-├── hello.py             # (Possibly a sample script or placeholder)
-├── main.py              # Main logic or entry point (if used)
-├── pyproject.toml       # Project metadata and dependencies
-├── run.py               # Script to generate and save signal plots
-├── signals.py           # Functions to create and modify signals
-├── test.py              # Basic unit tests for signal functions
+├── README.md # Project description and usage instructions
+├── hello.py # (Possibly a sample script or placeholder)
+├── main.py # Main logic or entry point (if used)
+├── pyproject.toml # Project metadata and dependencies
+├── run.py # Script to generate and save signal plots
+├── signals.py # Functions to create and modify signals
+├── test.py # Basic unit tests for signal functions
+└── pycache/ # Auto-generated Python bytecode cache
 ├── __pycache__/         # Auto-generated Python bytecode cache
