@@ -1,75 +1,112 @@
 # Signal Processing Tools
 
 A Python package for generating, modifying, and visualizing basic signals.  
-Developed as part of the AESB2122-24 Signals & Systems project of Applied Earth Science at TU Delft.
+Developed as part of the AESB2122-24 Signals & Systems project in Applied Earth Science at TU Delft.
 
-The project contains:
-- Code that creates basic signals (sine and square waves)
-- Tools for shifting signals in time and stretching or compressing them
-- A script that visualizes original vs. modified signals
-- A small set of tests to verify that the functions behave correctly
+---
+
+## Overview
+
+This project includes tools for:
+
+- Creating simple signals like sine and square waves  
+- Modifying signals by shifting or scaling them in time  
+- Visualizing the original vs. modified signals  
+- Running a few basic tests to make sure the core functions work properly
 
 ---
 
 ## What This Code Does
 
 ### Creating Signals
-The `signals.py` file provides functions that return NumPy arrays:
-- **make_sine(...)** creates a continuous sine wave
-- **make_square(...)** produces a binary (+1 / -1) square wave
+
+Inside `signals.py`, you'll find two functions that return NumPy arrays:
+
+- `make_sine(freq, duration, sr)`  
+  Generates a sine wave with the specified frequency, duration, and sampling rate.
+
+- `make_square(freq, duration, sr)`  
+  Produces a square wave that alternates between +1 and -1.
 
 ### Changing Signals
-Two operations are included:
-- **shift_time(...)** moves a signal forward or backward in time  
-  (delay = positive shift, advance = negative shift)
-- **scale_time(...)** stretches or compresses a signal by interpolation
+
+There are two key signal transformations included:
+
+- `shift_time(signal, sec, sr)`  
+  Shifts the signal forward or backward by a number of seconds.  
+  (Use positive values for delays, negative for advancing.)
+
+- `scale_time(signal, stretch)`  
+  Stretches or compresses the signal in time using interpolation.
 
 ---
 
 ## Example Output
 
-Running the included script will generate two images:
+Running the script will generate two PNG image files:
 
-sine_wave.png
-square_wave.png
+- `sine_wave.png`
+- `square_wave.png`
 
-Each image displays:
+Each image shows:
+
 - The original signal
-- The time-shifted version
-- The time-scaled version
+- A version shifted in time
+- A version scaled in time
 
 ---
 
-## Running the Code
+## How to Run It
+
+To generate the signals and save the plots:
+
 python run.py
-This prints a few sample values to the terminal and saves the figures as PNG files.
+
+
+This will print out some sample values and save the images to the current folder.
 
 ---
 
 ## Testing
 
-A separate file (`test.py`) includes basic checks to ensure that:
-- Sine wave has the correct number of samples
-- Square wave contains only +1 and -1 values
-- Shifting does not change signal length
-- Time scaling produces the correct new length
+A separate file `test.py` includes some basic checks:
 
-Run tests with:
+- Sine wave has the expected number of samples  
+- Square wave contains only +1 and -1 values  
+- Time shifting does not change the signal length  
+- Scaling updates the signal length as expected
+
+To run the tests:
+
 python test.py
+
+
 ---
 
 ## Requirements
+
+This project requires:
 
 - Python 3
 - NumPy
 - Matplotlib
 
-(These are listed in `pyproject.toml`)
+These are listed in `pyproject.toml`, but you can also install them manually:
 
-Install manually if needed:
 pip install numpy matplotlib
 
 
 ---
 
 ## Project Structure
+
+AESB2122-24 Project/
+│
+├── README.md            # Project description and usage instructions
+├── hello.py             # (Possibly a sample script or placeholder)
+├── main.py              # Main logic or entry point (if used)
+├── pyproject.toml       # Project metadata and dependencies
+├── run.py               # Script to generate and save signal plots
+├── signals.py           # Functions to create and modify signals
+├── test.py              # Basic unit tests for signal functions
+├── __pycache__/         # Auto-generated Python bytecode cache
