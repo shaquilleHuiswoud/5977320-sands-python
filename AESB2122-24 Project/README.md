@@ -82,8 +82,8 @@ python test.py
 
 the output should look like this:
 
-![pytest test output](Schermafbeelding 2025-11-05 150422.png
-)
+![pytest test output](![pytest output](pytest-result.png)
+
 ---
 
 ## Requirements
