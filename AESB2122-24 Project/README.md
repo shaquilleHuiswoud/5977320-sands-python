@@ -80,7 +80,9 @@ To run the tests:
 
 python test.py
 
+the output should look like this:
 
+![pytest test output](pytest-result.png)
 ---
 
 ## Requirements
