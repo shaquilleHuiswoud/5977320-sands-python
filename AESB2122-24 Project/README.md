@@ -112,6 +112,7 @@ AESB2122-24 Project/
 ├── hello.py           # (Possibly a sample script or placeholder)
 ├── main.py            # Main logic or entry point (if used)
 ├── pyproject.toml     # Project metadata and dependencies
+├── pytest-result.png  # picture of pytest result
 ├── run.py             # Script to generate and save signal plots
 ├── signals.py         # Functions to create and modify signals
 ├── test.py            # Basic unit tests for signal functions
