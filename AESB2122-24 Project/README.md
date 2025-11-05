@@ -82,8 +82,8 @@ python test.py
 
 the output should look like this:
 
-![pytest test output](![pytest output](pytest-result.png)
-)
+![pytest output](pytest-result.png)
+
 ---
 
 ## Requirements
